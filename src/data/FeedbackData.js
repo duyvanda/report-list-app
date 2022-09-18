@@ -226,9 +226,16 @@ const FeedbackData = [
 },
   {
     "id": "864891e1-95c7-47b1-8e46-60ae329749c3",
-    "text": 'Test Phan Quyen Ma NT',
+    "text": 'Tra Cứu Lịch Sử Đơn Hàng',
     "rating": "TT50H001",
+  },
+  {
+    "id": "864891e1-95c7-47b1-8e46-60ae329749c3",
+    "text": 'Tra Cứu Lịch Sử Đơn Hàng',
+    "rating": "P4724-0337",
   },
 ]
 
 export default FeedbackData
+
+//select * from biteam.sync_dms_pda_so where custid = 'P4718-0389' P4725-0297
