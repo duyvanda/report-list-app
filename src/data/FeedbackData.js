@@ -225,14 +225,14 @@ const FeedbackData = [
     "id": "f951d474-87f1-4d1d-a0cb-fb5c9eb20fec"
 },
   {
-    "id": "864891e1-95c7-47b1-8e46-60ae329749c3",
+    "id": "e829ea42-6267-4939-823a-250b02e4c76e",
     "text": 'Tra Cứu Lịch Sử Đơn Hàng',
     "rating": "TT50H001",
   },
   {
-    "id": "864891e1-95c7-47b1-8e46-60ae329749c3",
+    "id": "e829ea42-6267-4939-823a-250b02e4c76e",
     "text": 'Tra Cứu Lịch Sử Đơn Hàng',
-    "rating": "P4724-0337",
+    "rating": "P4718-0389",
   },
 ]
 

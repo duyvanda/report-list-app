@@ -43,7 +43,7 @@ function FeedbackList() {
     <Form.Control
     className="mb-2"
     id="inlineFormInput"
-    placeholder="Tim Theo Ma NV"
+    placeholder="Tim Theo Ma Nha Thuoc"
     onChange={handleTextChange}
     value={text}
     />

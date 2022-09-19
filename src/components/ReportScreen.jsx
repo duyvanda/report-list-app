@@ -21,6 +21,13 @@ function ReportScreen({match, history}) {
 
 	}, []);
 
+    let params = {
+        "token": "eyJpc3MiOiJodHRwczovL2VvZmZpY2UubWVyYXBncm91cC5jb20vdGVzdGVvZmZpY2UvYXBpL2FwaS9lY29tbWVyY2UvYXV0aC9sb2dpbiIsImlhdCI6MjAwMzMwMDA1OCwiZXhwIjoyMDAzMzAwMDU4LCJuYmYiOjIwMDMzMDAwNTgsImp0aSI6IlVmUUNwcWVzTUpWbVdpS3MiLCJzdWIiOiIyODEyIiwicHJ2IjoiMWQwYTAyMGFjZjVjNGI2YzQ5Nzk4OWRmMWFiZjBmYmQ0ZThjOGQ2MyIsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2VvZmZpY2UubWVyYXBncm91cC5jb20vdGVzdGVvZmZpY2UvYXBpL2FwaS9lY29tbWVyY2UvYXV0aC9sb2dpbiIsImlhdCI6MTY2MzMwMDA1OCwiZXhwIjoxNjY1OTI4MDU4LCJuYmYiOjE2NjMzMDAwNTgsImp0aSI6IlVmUUNwcWVzTUpWbVdpS3MiLCJzdWIiOiIyODEyIiwicHJ2IjoiMWQwYTAyMGFjZjVjNGI2YzQ5Nzk4OWRmMWFiZjBmYmQ0ZThjOGQ2MyJ9.aFLs_V9dNX1fO2jFnxDrtg9p6pGLgEPe8UWKzfy7_DY",
+        "id_customer": `${manv.text}`
+      };
+    let paramsAsString = JSON.stringify(params);
+    let encodedParams = encodeURIComponent(paramsAsString)
+
     return (
         // <div class='container'></div>
         <Container className="fluid">
@@ -29,7 +36,7 @@ function ReportScreen({match, history}) {
 			</Link>
         <Card style={{backgroundColor : "#f0ebf8", border: 0}}>
             <div align="center">
-            <iframe width="600" className="vh-100" src={`https://datastudio.google.com/embed/reporting/${match.params.id}/?params=%7B%22api_key%22%3A%20%22${manv.text}%22%7D`}  style={{ border: 1 }} allowFullScreen></iframe>
+            <iframe width="1200" className="vh-100" src={`https://datastudio.google.com/embed/reporting/${match.params.id}/?params=${encodedParams}`}  style={{ border: 1 }} allowFullScreen></iframe>
             </div>
         </Card>
         </Container>
